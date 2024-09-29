@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of international actress Angela Zahara. Discover her biography, filmography, and latest projects.">
+    <title>Angela Zahara - Official Website</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS.js for animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff69b4, #ff85c0);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+        }
+
+        .nav-link:hover {
+            color: #ff69b4 !important;
+        }
+
+        h2 {
+            color: #ff69b4;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-form button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff85c0;
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        /* AOS custom animations */
+        [data-aos] {
+            transition-property: transform, opacity !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header data-aos="fade-in">
+        <h1>Angela Zahara - International Actress</h1>
+        <p>Welcome to the official website of Angela Zahara</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Angela Zahara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bio">Biography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#filmography">Filmography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Biography Section -->
+    <section id="bio" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Biography</h2>
+        <p class="text-center">Angela Zahara is an internationally acclaimed actress known for her versatility and captivating performances. With a career spanning [X years], she has starred in numerous films and TV shows, earning awards and recognition across the globe. Angela’s journey started with a passion for acting at a young age, and today, she is celebrated for her talent and dedication to the craft...</p>
+    </section>
+
+    <!-- Filmography Section -->
+    <section id="filmography" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Filmography</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Movies</h3>
+                <ul>
+                    <li>Movie Title 1 (Role) - Year</li>
+                    <li>Movie Title 2 (Role) - Year</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>TV Shows</h3>
+                <ul>
+                    <li>TV Show 1 (Role) - Year</li>
+                    <li>TV Show 2 (Role) - Year</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Bootstrap Carousel -->
+    <section id="gallery" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Gallery</h2>
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="photo1.jpg" class="d-block w-100" alt="Angela Zahara">
+                </div>
+                <div class="carousel-item">
+                    <img src="photo2.jpg" class="d-block w-100" alt="Angela Zahara">
+                </div>
+                <div class="carousel-item">
+                    <img src="photo3.jpg" class="d-block w-100" alt="Angela Zahara">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5" data-aos="fade-up">
+        <h2 class="text-center">Contact</h2>
+        <form class="contact-form mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg">Send Message</button>
+            </div>
+        </form>
+        <p class="text-center mt-3">For professional inquiries, please contact Angela's management at <a href="mailto:email@example.com">email@example.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Angela Zahara © 2024 | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and AOS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS for animations
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+
+</body>
+</html>
